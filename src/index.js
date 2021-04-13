@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./assets/main.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "primereact/resources/themes/saga-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
+import "./assets/main.css";
 
 ReactDOM.render(
   <React.StrictMode>

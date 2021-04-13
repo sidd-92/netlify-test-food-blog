@@ -1,29 +1,10 @@
-import { useEffect, useState } from "react";
-
-function useDarkMode() {
-  const [theme, setTheme] = useState("light");
-  const colorTheme = theme === "light" ? "dark" : "light";
-  useEffect(
-    () => {
-      const root = window.document.documentElement;
-      root.classList.remove(colorTheme);
-      root.classList.add(theme);
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [theme],
-    colorTheme
-  );
-  return [colorTheme, setTheme];
-}
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-  const [colorTheme, setTheme] = useDarkMode();
   return (
     <>
-      <div
-        className=" w-56 border border-gray-800 transition duration-300 p-2 my-2 dark:bg-gray-800 dark:text-white"
-        onClick={() => setTheme(colorTheme)}
-      >
+      <Navbar />
+      <div className=" w-56 border border-gray-800 transition duration-300 p-2 my-2 dark:bg-gray-800 dark:text-white">
         Toggle Light / Dark Mode
       </div>
       <div className="bg-green-500 p-10 transition duration-300 text-3xl dark:bg-gray-800 dark:text-green-500">
