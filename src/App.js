@@ -9,6 +9,7 @@ function useDarkMode() {
       root.classList.remove(colorTheme);
       root.classList.add(theme);
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [theme],
     colorTheme
   );
