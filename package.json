@@ -22,7 +22,7 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run watch:css && react-scripts start",
     "build": "npm run purge:css && react-scripts build",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "purge:css": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/assets/tailwind.css -o ./src/assets/main.css",

@@ -18,7 +18,9 @@ function Navbar() {
           offIcon="pi pi-moon"
           onLabel=""
           offLabel=""
-          className="w-10 h-10"
+          tooltip={colorTheme === "light" ? "Toggle Dark" : "Toggle Light"}
+          tooltipOptions={{ position: "left", className: "text-xs" }}
+          className="custom-target-icon w-10 h-auto"
           checked={colorTheme === "light"}
           onChange={(e) => setTheme(colorTheme)}
         />

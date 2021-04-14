@@ -1,0 +1,24 @@
+.p-togglebutton.p-button.p-highlight {
+  background: #fbbf24 !important;
+  border-color: #fef3c7;
+  color: black !important;
+  outline: none;
+}
+
+.p-togglebutton.p-button.p-highlight .p-button-icon-left,
+.p-togglebutton.p-button.p-highlight .p-button-icon-right {
+  color: black !important;
+}
+
+.p-togglebutton.p-button .p-button-icon-left,
+.p-togglebutton.p-button .p-button-icon-right {
+  color: rgba(16, 185, 129, 1);
+}
+
+.p-togglebutton.p-button {
+  background: transparent;
+  border: 1px solid rgba(16, 185, 129, 1);
+  color: #495057;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+    box-shadow 0.2s;
+}

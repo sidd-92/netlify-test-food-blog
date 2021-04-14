@@ -6,6 +6,7 @@ import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "./assets/main.css";
+import "./assets/custom.css";
 
 ReactDOM.render(
   <React.StrictMode>
