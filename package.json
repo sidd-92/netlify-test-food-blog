@@ -23,8 +23,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run watch:css && react-scripts build",
+    "build": "npm run purge:css && react-scripts build",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "purge:css": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/assets/tailwind.css -o ./src/assets/main.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
