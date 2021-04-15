@@ -4,7 +4,7 @@ const URL = "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies";
 function ImageBox({ fileName, name, link }) {
   let url = URL + "/" + fileName + ".png";
   return (
-    <Link to={`/food/${link}`} className="mt-2 lg:mt-10">
+    <Link to={`/food/${link}`} className="mt-2 lg:mt-4">
       <div className="bg-gray-100 dark:bg-gray-800 dark:text-green-600 w-full lg:w-320px shadow-xl border border-green-700 rounded-md  flex group cursor-pointer relative ">
         <img
           src={url}
@@ -14,7 +14,10 @@ function ImageBox({ fileName, name, link }) {
           height="10"
         />
 
-        <div href="#" className="pt-1 pl-1 font-semibold group-hover:underline">
+        <div
+          href="#"
+          className="p-1 font-semibold group-hover:underline break-words"
+        >
           {name}
         </div>
         <div className="absolute bottom-0 right-3">

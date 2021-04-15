@@ -6,7 +6,7 @@ function NavItem({ label, to, activeOnlyWhenExact }) {
     exact: activeOnlyWhenExact,
   });
   return match ? (
-    <div className="bg-green-800 cursor-pointer transition duration-300 border border-green-500 p-2 text-green-500 dark:border-gray-800 dark:text-white lg:mr-2 hover:text-white dark:hover:text-green-300">
+    <div className="bg-green-800 cursor-pointer transition duration-300 border border-green-500 p-2 text-green-100 dark:border-gray-800 dark:text-white lg:mr-2 hover:text-white dark:hover:text-green-300">
       {label}
     </div>
   ) : (
