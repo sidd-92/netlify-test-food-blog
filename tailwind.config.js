@@ -10,6 +10,9 @@ module.exports = {
   },
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ["Roboto", "sans-serif"],
+    },
     extend: {
       spacing: {
         "20px": "20px",
