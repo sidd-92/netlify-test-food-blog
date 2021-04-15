@@ -107,7 +107,7 @@ function App() {
       <Router>
         <Navbar />
         <div className="">
-          <div className="bg-green-500 hidden lg:block transition p-1 lg:p-3 lg:text-2xl duration-300 dark:bg-gray-800 dark:text-green-500">
+          <div className="bg-green-500 hidden lg:block transition p-1 lg:p-3 lg:text-2xl duration-300 dark:bg-gray-700 dark:text-green-500">
             Welcome to test App
           </div>
           <Switch>
