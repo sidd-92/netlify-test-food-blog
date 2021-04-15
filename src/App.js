@@ -11,6 +11,12 @@ const images = [
   "medu-vada",
   "pepper-rasam",
   "plain-dosa",
+  "ribbon-pakora",
+  "samosa",
+  "semiya-upma",
+  "sweet-pongal",
+  "tomato-rasam",
+  "ven-pongal",
 ];
 function App() {
   return (
