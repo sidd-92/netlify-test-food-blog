@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
 import ImageBox from "./components/ImageBox/ImageBox";
-import { useEffect } from "react";
 const images = [
   "bhindi-curry",
   "chole-batura",
@@ -14,25 +13,6 @@ const images = [
   "plain-dosa",
 ];
 function App() {
-  useEffect(() => {
-    let imgs = [
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/bhindi-curry.png",
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/chole-batura.png",
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/chole-subji.png",
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/dahivada.png",
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/idly.png",
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/kadai-veg.png",
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/masala-pav.png",
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/medu-vada.png",
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/pepper-rasam.png",
-      "https://food-blog-images-all.s3.ap-south-1.amazonaws.com/recipies/plain-dosa.png",
-    ];
-    imgs.forEach((url) => {
-      const img = new Image();
-      img.src = url;
-    });
-  }, []);
-
   return (
     <>
       <Navbar />
